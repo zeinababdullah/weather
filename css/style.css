@@ -1,0 +1,132 @@
+:root{
+    --main_color: #1E202B;
+    --secound_color : #323544;
+    --color: #009AD8;
+    --font-color: #bfc1c8;
+}
+body{
+    background-color: var(--main_color);
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration:  none;
+}
+/* &---------navbar------------ */
+.navbar{
+    background-color: var(--main_color);
+}
+.navbar-brand{
+    padding-bottom: 0;
+}
+.navbar small{
+    font-size: 0.7rem;
+}
+.navbar img{
+    width: 5rem;
+    height: 2.5rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 5px 25px;
+    transition:  0.3s all ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover,.navbar-dark .navbar-nav .nav-link.active{
+    color: var(--color);
+    border: 1px solid var(--color);
+    
+}
+
+/* &---------header------------ */
+.header{
+    background-image: url("../images/banner.png");
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+.form-control {
+    padding: 1rem;
+    color: #212529;
+    background-color: var(--main_color); 
+    border: 1px solid transparent;
+    border-radius: 35px;
+}
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.form-control:focus {
+    color: white;
+    background-color: var(--main_color);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+.input-group-append{
+    right: 5px;
+    transform: translateY(18%);
+    z-index: 10;
+}
+.input-group-text {
+    padding: 0.5rem  2rem;
+    color: white;
+    background-color: var(--color);
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+/* &---------display weather------------ */
+.weatherShow{
+    transform: translateY(-50%);
+}
+.currentShow,.tommorowNextShow{
+    background-color: var(--secound_color);
+}
+.tommorowShow{
+    background-color: #262936;
+}
+.day{
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--font-color);
+    font-size: 0.9rem;
+    left: 0;
+}
+.country{
+    color: var(--font-color);
+}
+.degree{
+    font-size: 5rem;
+}
+.weatherStatus span{
+    color: var(--color);
+    font-size: 0.9rem;
+}
+.tommorowShowContent img{
+    width: 15%;
+}
+/* &---------footer------------ */
+.footer{
+    background-color: var(--secound_color);
+}
+.icon-i{
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    color: var(--color);
+    transition: all 0.5s;
+}
+.icon-i i{
+    transition: all 0.5s;
+}
+.icon-i:hover{
+    background-color: var(--color);
+}
+.icon-i:hover i{
+    color: white;
+}

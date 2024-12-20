@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather</title>
+  <!--!------fontawsome file --------->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!--!------bootstrap css file --------->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!--!------style css file --------->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!--!------navbar --------->
+  <nav class="navbar navbar-expand-lg navbar-dark pt-5 pb-4">
+    <div class="container w-75">
+      <img class="pe-3" src="./images/logo@2x.png" alt="">
+      <div class="d-flex flex-column gx-0">
+        <a class="navbar-brand fs-6" href="#">Weather</a>
+        <small class="text-secondary">tagline goes here</small>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--!------header --------->
+  <header class="header">
+    <div class="container  w-75 mx-auto pt-5">
+      <div class="input-group mb-3 position-relative">
+        <input type="text" class="searchInput form-control" placeholder="find your location" aria-label="find your location"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append position-absolute">
+          <span class="input-group-text" id="basic-addon2">find</span>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!--!------display weather --------->
+  <div class="container weatherShow w-75 mx-auto">
+    <div class="row">
+      <div class="col-md-4 currentShow position-relative">
+        <div class="day pt-2 pb-2 ps-2 pe-2 w-100 d-flex justify-content-between position-absolute">
+          <span class="currentDayName">Tuesday</span>
+          <span class="currentDayMonth" >17December</span>
+        </div>
+        <div class="mt-5 ps-4 pe-3 pb-3">
+          <div>
+            <span class="country fs-4">Cairo</span>
+          </div>
+          <div class="text-white d-flex justify-content-around">
+            <div class="currentDegree degree fw-bolder">16
+              <sup>o</sup>c
+            </div>
+            <img class="currentStautsImg w-25" src="./images/current img.webp" alt="">
+          </div>
+          <div class="weatherStatus pt-4 pb-3">
+            <span class="currentWeatherStatus">Partly cloudy</span>
+          </div>
+          <div class=" text-secondary pb-2 d-flex justify-content-between">
+            <div>
+              <img class="w-25" src="./images/icon-umberella@2x.png" alt="">
+              <span class="humidity">20%</span>
+            </div>
+            <div>
+              <img class="w-25" src="./images/icon-wind@2x.png" alt="">
+              <span class="windKph">18km/h</span>
+            </div>
+            <div>
+              <img class="w-25" src="./images/icon-compass@2x.png" alt="">
+              <span class="winddDirection">East</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 tommorowShow position-relative">
+        <div class="day pt-2 pb-2 ps-2 pe-2 w-100 d-flex justify-content-center position-absolute">
+          <span class="nextDayName">Wednesday</span>
+        </div>
+        <div class="tommorowShowContent mt-5 d-flex flex-column justify-content-center align-items-center gap-2">
+          <img class="tomorrowImg pt-4" src="./images/113 (1).png" alt="">
+          <div class="text-white text-center">
+            <h2 class="degree tomorrowMaxDegree fs-3 fw-bolder">21.3<sup>o</sup>c</h2>
+            <small class="tomorrowMinDegree text-secondary">12.1<sup>o</sup></small>
+          </div>
+          <div class="weatherStatus">
+            <span class="nextWeatherStatus">Sunny</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 tommorowNextShow position-relative">
+        <div class="day pt-2 pb-2 ps-2 pe-2 w-100 d-flex justify-content-center position-absolute">
+          <span class="tomorrowNextDay">Wednesday</span>
+        </div>
+        <div class="tommorowShowContent mt-5 d-flex flex-column justify-content-center align-items-center gap-2">
+          <img class="tomorrowNextImg pt-4" src="./images/176.png" alt="">
+          <div class="text-white text-center">
+            <h2 class="degree nextTomorrowMaxDegree fs-3 fw-bolder">20.5<sup>o</sup>c</h2>
+            <small class="nextTomorrowMinDegree text-secondary">12.5<sup>o</sup></small>
+          </div>
+          <div class="weatherStatus">
+            <span class="nextTomorrowStatus">Patchy rain nearby</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--!------footer --------->
+  <div class="footer pt-5 pb-5">
+    <div class="container w-75 mx-auto">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="input-group mb-3 position-relative">
+            <input type="text" class="form-control" placeholder="enter Your Email To Subscribe" aria-label="enter Your Email To Subscribe"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append position-absolute">
+              <span class="input-group-text ps-3 pe-3" id="basic-addon2">Subscribe</span>
+            </div>
+          </div>
+          <small class="text-white pt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</small>
+        </div>
+        <div class="col-md-4">
+          <div class="icons d-flex gap-1 align-items-center justify-content-center">
+            <div class="icon-i rounded-circle d-flex align-items-center justify-content-center"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="icon-i rounded-circle d-flex align-items-center justify-content-center"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="icon-i rounded-circle d-flex align-items-center justify-content-center"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></div>
+            <div class="icon-i rounded-circle d-flex align-items-center justify-content-center"><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--!------bootstrap js file --------->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!--!------main js file --------->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
